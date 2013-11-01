@@ -3,23 +3,22 @@
 // onclick
 // removeEventListener
 
-
 var Page = {
 
-	myButton: document.getElementById('add-person-button');
-	myLink: document.getElementById('add-person-link');
+	myButton: document.getElementById('add-person-button'),
+	myLink: document.getElementById('add-person-link'),
 
 
 	setButtonEvent: function() {
 		// write a function that adds an event listener to the button
 		// that will call the promptInfo function.
 		// after the button is clicked, it should say "change person info"
-	}
+	},
 
 	setLinkEvent: function() {
 		// write a function that will add an event listener to the link,
 		// making sure that you account for the link's natural redirct.
-	}
+	},
 
 
 	promptInfo: function() {
@@ -27,7 +26,7 @@ var Page = {
 			age = prompt('how old are you?'),
 			email = prompt('what is your email');
 			addPerson(name, age, email);
-	}
+	},
 
 	addPerson: function(name, age, email) {
 		var userDiv = document.getElementById('user-box'),
@@ -37,7 +36,7 @@ var Page = {
 
 		userDiv.innerHTML = nameHeader + ageField	+ emailField;
 	}
-}
+};
 
 
 Page.setButtonEvent();
